@@ -22,7 +22,7 @@
 
     <header class="header py-2 ">
         <nav class="navbar navbar-dark  navbar-expand-lg bg-transparent ">
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -46,9 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-disabled="true " href="contact us.html">Contact us</a>
                         </li>
-                       
 
-                        <li class="nav-item"  >
+
+                        <li class="nav-item">
                             <button class="btn btn-outline-warning  " type="submit">Contact us</button>
                         </li>
                     </ul>
@@ -57,6 +57,7 @@
         </nav>
     </header>
 
+
     <section style="background:  #1C140F;  color: white; " class="py-5 ">
         <h1
             style="color: #FFF;text-align: center;font-family: Poppins;  font-size: 33px; font-style: normal; font-weight: 600; line-height: 180.5%; /* 59.565px */">
@@ -64,29 +65,46 @@
         <p
             style="color: #FFF; text-align: center; margin-bottom: 50px;  font-family: Poppins; font-size: 16px; font-style: normal; font-weight: 500;line-height: 187.5%; ">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-           
-            <img src="./assets/img/Untitled.png" alt="" style="width: 700px; margin-left: 25%;margin-bottom: 20px; " >
 
-           
+        <img src="./assets/img/Untitled.png" alt="" style="width: 700px; margin-left: 25%;margin-bottom: 20px; ">
+
+
 
     </section>
     <section style="background:  #1C140F;  color: white; " class="py-5 ">
-        <form>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control " placeholder="First name"  style="  margin-left: 25%;width: 250px; height: 49px;border-radius: 10px;">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name"  style="width: 250px; height: 49px;border-radius: 10px;">
-              </div>
-              <div class="mt-5 "  style="  margin-left: 12%;">
-                <input type="text" class="form-control" placeholder="Last name"  style="width: 810px; height: 49px;border-radius: 10px;">
-              </div>
-              <div class="mt-5 "  style="  margin-left: 12%;">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="width: 810px; height: 49px;border-radius: 10px;"></textarea>
-            </div>
-            <div class="mt-5 "  style="  text-align: center;">
-              <input type="submit" value="Get in touch">
-            </div>
-          </form>
-        </section>
+        <div class="contain">
+
+            <div class="wrapper">
+
+                <div class="form">
+
+                    <h2 class="form-headline">Send us a message</h2>
+                    <form id="submit-form" action="">
+                        <p>
+                            <input id="name" class="form-input" type="text" placeholder="First Name*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p>
+                            <input id="email" class="form-input" type="email" placeholder="Last Name*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p class="full-width">
+                            <input id="company-name" class="form-input" type="text" placeholder="Your Email*"
+                                required>
+                            <small></small>
+                        </p>
+                        <p class="full-width">
+                            <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*"
+                                required></textarea>
+                            <small></small>
+                        </p>
+                       
+                        <p class="full-width">
+                            <input type="submit" class="submit-btn" value="Get in touch" onclick="checkValidations()">
+                           
+                        </p>
+                    </form>
+                </div>
+
+
+    </section>
